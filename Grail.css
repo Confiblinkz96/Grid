@@ -1,0 +1,49 @@
+.Grid-item {
+    border: 5px solid white;
+}
+
+.Grid-container{
+    display: grid;
+    grid-template-areas:
+    "Header Header Header"
+    "Navigation HolyGrailLayout Sider"
+    "Footer Footer Footer"
+    ;
+    text-align: center;
+}
+
+.Grid-item:nth-child(1) {
+    grid-area: Header;
+    height: 10vh;
+    background-color: rgb(247, 127, 72);
+    align-content: center;
+}
+
+.Grid-item:nth-child(2) {
+    grid-area: Navigation;
+    height: 80vh;
+    background-color: rgb(55, 213, 55);
+    align-content: center;
+}
+
+.Grid-item:nth-child(3) {
+    grid-area: Holy Grail Layout;
+    height: 80vh;
+    background-color: rgb(203, 115, 130);
+    align-content: center;
+}
+
+.Grid-item:nth-child(4) {
+    grid-area: Sider;
+    height: 80vh;
+    background-color: yellow;
+    align-content: center;
+}
+
+.Grid-item:nth-child(5) {
+    grid-area: Footer;
+    height: 10vh;
+    background-color: rgb(247, 67, 58);
+    align-content: center;
+
+}
